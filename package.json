@@ -1,0 +1,21 @@
+{
+  "name": "twoallbeefpatties",
+  "version": "1.0.0",
+  "description": "Profile README generator",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "demo": "node scripts/build.mjs --demo"
+  },
+  "dependencies": {
+    "@fontsource/archivo-black": "^5.3.0",
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/jetbrains-mono": "^5.3.0",
+    "fontkit": "^3.0.0",
+    "subset-font": "^2.9.0"
+  },
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  }
+}

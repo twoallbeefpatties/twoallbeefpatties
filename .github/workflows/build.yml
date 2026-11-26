@@ -1,0 +1,58 @@
+name: Build profile
+
+on:
+  push:
+    branches: [main]
+    paths-ignore: [README.md]
+  schedule:
+    - cron: "17 7 * * *" # daily, 07:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-profile
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Render tiles and README
+        run: npm run build
+        env:
+          # Optional PROFILE_TOKEN secret; falls back to the built-in token.
+          PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish tiles to the output branch
+        working-directory: dist
+        run: |
+          git init -q -b ${{ env.OUTPUT_BRANCH }}
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Refresh profile tiles"
+          git push -q --force "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:${{ env.OUTPUT_BRANCH }}
+        env:
+          OUTPUT_BRANCH: output
+
+      - name: Commit README if profile.json changed it
+        run: |
+          if ! git diff --quiet -- README.md; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md
+            git commit -q -m "Regenerate README from profile.json"
+            git push -q
+          fi

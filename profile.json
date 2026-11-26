@@ -1,0 +1,226 @@
+{
+  "login": "twoallbeefpatties",
+  "repo": "twoallbeefpatties/twoallbeefpatties",
+  "outputBranch": "output",
+  "eyebrow": "twoallbeefpatties · aka bigmac",
+  "status": "order up — open for collabs",
+  "headline": [
+    "The only REAL",
+    "Big Mac."
+  ],
+  "blurb": "Senior Solutions Engineer at N-able. 14+ years in MSP IT, from the help desk to running operations. Give me any stack: I'll figure out what fits and build it — full-stack apps, automation, integrations and AI tooling.",
+  "links": [
+    {
+      "id": "github",
+      "label": "GitHub",
+      "url": "https://github.com/twoallbeefpatties",
+      "primary": true
+    },
+    {
+      "id": "linkedin",
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/zacheryfrazier/"
+    },
+    {
+      "id": "email",
+      "label": "Email",
+      "url": "mailto:admin@chimpsec.com"
+    }
+  ],
+  "now": {
+    "name": "nc-scripting-tool",
+    "note": "Run N-able Scripting via Ecoverse",
+    "url": "https://github.com/twoallbeefpatties/nc-scripting-tool"
+  },
+  "layers": [
+    {
+      "kind": "bun-top",
+      "layer": "Sesame bun",
+      "what": "AI & LLMs",
+      "chips": [
+        "Anthropic",
+        "OpenAI",
+        "Ollama",
+        "LangChain",
+        "Vertesia"
+      ],
+      "short": "AI & LLMs"
+    },
+    {
+      "kind": "patty",
+      "layer": "Patty #1",
+      "what": "any stack, any platform",
+      "chips": [
+        "RMM",
+        "EDR",
+        "PSA",
+        "Cloud",
+        "Rollouts & migrations",
+        "Team enablement"
+      ],
+      "short": "learns any stack fast"
+    },
+    {
+      "kind": "pickles",
+      "layer": "Pickles",
+      "what": "the sharp stuff",
+      "short": "security + IR",
+      "chips": [
+        "EDR",
+        "Incident response",
+        "SecOps"
+      ]
+    },
+    {
+      "kind": "lettuce",
+      "layer": "Lettuce",
+      "what": "languages",
+      "short": "PowerShell, TS, Python",
+      "chips": [
+        "PowerShell",
+        "TypeScript",
+        "Python",
+        "Go",
+        "Rust",
+        "C# / .NET"
+      ]
+    },
+    {
+      "kind": "onions",
+      "layer": "Onions",
+      "what": "the homelab (it has layers)",
+      "short": "the homelab",
+      "chips": [
+        "Traefik",
+        "Envoy",
+        "Nginx",
+        "UniFi",
+        "Docker",
+        "Grafana",
+        "Cloudflare",
+        "CrowdSec"
+      ]
+    },
+    {
+      "kind": "sauce",
+      "layer": "Special sauce",
+      "what": "the glue",
+      "chips": [
+        "Model Context Protocol",
+        "REST APIs",
+        "Webhooks"
+      ],
+      "short": "MCP + REST APIs"
+    },
+    {
+      "kind": "club",
+      "layer": "Club bun",
+      "what": "what holds it up",
+      "short": "ops leadership",
+      "chips": [
+        "Service delivery",
+        "Team leadership",
+        "KPIs & escalations"
+      ]
+    },
+    {
+      "kind": "patty",
+      "layer": "Patty #2",
+      "what": "tools I build",
+      "short": "full-stack + tooling",
+      "chips": [
+        "Full-stack apps",
+        "API modules",
+        "MCP servers",
+        "Integrations"
+      ]
+    },
+    {
+      "kind": "cheese",
+      "layer": "Cheese",
+      "what": "automation & cloud",
+      "short": "RMM, CI, cloud",
+      "chips": [
+        "RMM automation",
+        "GitHub Actions",
+        "Azure",
+        "AWS"
+      ]
+    },
+    {
+      "kind": "heel",
+      "layer": "Heel",
+      "what": "the foundation",
+      "short": "14+ years in MSP IT",
+      "chips": [
+        "14+ years in MSP",
+        "Help desk to ops",
+        "Project management"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "repo": "NCRestAPI",
+      "name": "NCRestAPI",
+      "tag": "PowerShell",
+      "color": "#7ab0e6",
+      "desc": "PowerShell module for the N-able N-central REST API."
+    },
+    {
+      "repo": "n-central-rest-api-mcp",
+      "name": "N-central REST API MCP",
+      "tag": "MCP",
+      "color": "#f2b33d",
+      "desc": "MCP server for LLM-driven RMM management and reporting."
+    },
+    {
+      "repo": "NCRelay",
+      "name": "NCRelay",
+      "tag": "Relay",
+      "color": "#5fae3e",
+      "desc": "Forwards alerts to Slack, Discord, Microsoft Teams and webhooks."
+    },
+    {
+      "repo": "homelab-mcp",
+      "name": "Homelab MCP",
+      "tag": "MCP",
+      "color": "#f2b33d",
+      "desc": "MCP server for managing homelab infrastructure."
+    },
+    {
+      "repo": "nable-skills",
+      "name": "N-able Skills",
+      "tag": "Skills",
+      "color": "#e8833a",
+      "desc": "MSP skill library for Claude Code and the N-able MCP."
+    }
+  ],
+  "fullMenuUrl": "https://github.com/twoallbeefpatties?tab=repositories",
+  "specials": [
+    "Workflow automation",
+    "RMM + SaaS integrations",
+    "IT-ops dev tooling",
+    "AI-driven efficiency",
+    "Platform scalability",
+    "Team productivity"
+  ],
+  "_hidden_details_note": "Rename \"_details\" back to \"details\" to show these as expandable sections under the page.",
+  "_details": [
+    {
+      "title": "Secret menu",
+      "teaser": "the homelab",
+      "body": "- **Edge:** Traefik, Envoy and Nginx reverse proxies behind Cloudflare\n- **Network:** UniFi\n- **Compute:** Docker\n- **Security:** CrowdSec\n- **Observability:** Grafana, Graylog\n- **Glue:** Tailscale mesh between all of it"
+    },
+    {
+      "title": "Kitchen history",
+      "teaser": "14 years, help desk to solutions engineering",
+      "body": "- **2025 – now** · Senior Solutions Engineer, N-able — lead N-central + SentinelOne EDR implementations; SME and trainer for internal teams and partners\n- **2022 – 2025** · Technical Services Consultant, N-able — N-central onboarding, migrations, scripting and integrations\n- **2021 – 2022** · Service Manager → NOC Service Manager, The AME Group — RMM automation, escalations, team skills\n- **2018 – 2021** · Operations Manager, SKYE Technologies — service delivery, KPIs, R&D on tools and methods\n- **2016 – 2018** · Project Manager, SKYE Technologies — 10+ concurrent client projects\n- **2012 – 2016** · Tier 1 → Tier 3 Support, SKYE Technologies — field work, escalations, solution design"
+    },
+    {
+      "title": "Allergen info",
+      "teaser": "how I like to work",
+      "body": "- [how you like to collaborate]\n- [what you're happy to help with]\n- [best way to reach you]"
+    }
+  ]
+}
